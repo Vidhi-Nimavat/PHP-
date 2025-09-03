@@ -1,0 +1,24 @@
+<!-- Lab 1: User Input Sanitization for Web Forms
+Functions Used: trim(), strtolower(), htmlspecialchars()
+Objective:
+Clean and secure user-submitted data from a contact form before storing it in a database.
+Tasks:
+ Accept name, email, and message via $_POST.
+ Use trim() to remove unwanted whitespace.
+ Convert email to lowercase using strtolower().
+ Use htmlspecialchars() to prevent XSS attacks in the message field.
+ Display the sanitized output.-->
+<html>
+<head>
+    <title>Contact Form</title>
+</head>
+<body>
+
+<form action="lab1_php.php" method="POST">
+    <label>Name: <input type="text" name="name"></label><br><br>
+    <label>Email:<input type="text" name="email"></label><br><br>
+    <label>Message:<input type="text" name="message"><label><br><br>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>

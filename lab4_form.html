@@ -1,0 +1,30 @@
+<!-- Lab 4: CSV Parsing for Batch Evaluation
+Functions Used: explode(), implode()
+Objective:
+Parse and reformat student scores from a CSV string.
+Tasks:
+ Input: &quot;Hardik,85,90,78&quot;
+ Use explode() to split the string into an array.
+ Calculate average score.
+ Use implode() to create a summary string: &quot;Hardik - Avg: 84.33&quot;
+ Display formatted output for multiple students.-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSV Batch Evaluation</title>
+</head>
+<body>
+
+<h2>Enter Student CSV Data</h2>
+<p>Example (one per line):</p>
+<pre>Hardik,85,90,78
+Alice,92,88,79
+Bob,70,75,80</pre>
+
+<form action="lab4_php.php" method="POST">
+    <textarea name="csv_data" rows="10" cols="50"></textarea><br><br>
+    <input type="submit" value="Evaluate">
+</form>
+
+</body>
+</html>
